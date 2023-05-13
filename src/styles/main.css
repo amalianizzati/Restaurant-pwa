@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Quicksand', sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #194d40;
+  background: antiquewhite;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: #194d40;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 100px;
+}
+header {
+  display: inline;
+}
+.menumobile {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 630;
+  justify-content: space-between;
+  background-color: #194d40;
+  color: antiquewhite;
+}
+.navmobile {
+  display: flex;
+  width: 100%;
+  font-weight: 630;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #194d40;
+}
+.icon-mobile a {
+  text-decoration: none;
+  color: antiquewhite;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 2rem;
+  display: inline-block;
+}
+.navmobile a {
+  padding: 1.3em;
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-Listmob {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
+}
+.nav-Itemsmob a {
+  display: inline-block;
+  text-align: right;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #194d40;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  font-weight: 650;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #194d40;
+}
+.navList {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  color: antiquewhite;
+}
+.logo {
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+  text-align: left;
+  box-sizing: border-box;
+  display: inline-block;
+  color: antiquewhite;
+}
+.navItems {
+  display: inline-block;
+  line-height: 25px;
+  text-align: right;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.navbar a {
+  display: inline-block;
+  padding: 1.4em;
+  text-decoration: none;
+  color: antiquewhite;
+}
+.navItems:hover {
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+}
+.hero-inner {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 32px;
+  z-index: 2;
+}
+.hero-title {
+  color: antiquewhite;
+  font-weight: 850;
+  font-size: 3rem;
+}
+.hero-subtitle {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 670;
+  color: antiquewhite;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+}
+.content {
+  width: 100%;
+  margin-top: 1em;
+}
+#content {
+  padding-left: 45px;
+  padding-right: 45px;
+  width: 100%;
+  margin-top: 1em;
+}
+
+#content h1 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#content a {
+  font-weight: 400;
+}
+.title-content {
+  font-weight: 750;
+  font-size: 32px;
+  border-bottom: 2.5px solid #164136;
+}
+.row {
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: calc(100% / 3 - 18px);
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1;
+  background-color: antiquewhite;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 7px 0px;
+  height: 360px;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+}
+.card .city-label {
+  margin: 1em;
+  padding: 0.5em 1em;
+  text-align: left;
+  font-weight: 650;
+  position: absolute;
+  color: antiquewhite;
+  background-color: #164136;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-body {
+  padding: 15px;
+}
+.card-title a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 650;
+  text-decoration: none;
+  min-height: 44px;
+  min-height: 44px;
+  color: #164136;
+}
+.card-text {
+  color: #164136;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}
+.card .rating {
+  color: #8f260c;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  font-weight: 620;
+}
+
+/* resto-detail */
+.detail {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.detail.resto-name {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.detail img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.detail p {
+  font-size: 15px;
+  text-align: justify;
+}
+.detail .info h2 {
+  text-align: center;
+  margin: 27px;
+  font-size: 24px;
+}
+.detail .info h3 {
+  font-size: 20px;
+}
+.detail .description h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 15px;
+}
+.customer-reviews {
+  box-sizing: border-box;
+  box-shadow: #164136;
+  border-radius: 10px;
+  height: 350px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.customer-reviews h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 15px;
+}
+.customer-reviews .review .name {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+.customer-reviews .review .date {
+  font-size: 13px;
+  color: rgb(155, 87, 4);
+}
+.customer-reviews .review p {
+  font-size: 15px;
+}
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 4vh 0;
+  margin-top: 20px;
+  text-align: center;
+  color: antiquewhite;
+  background-color: #194d40;
+}
